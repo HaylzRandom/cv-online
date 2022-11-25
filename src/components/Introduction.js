@@ -10,7 +10,7 @@ const Introduction = () => {
 	const { name, position, location, email, website, linkedIn, github, about } =
 		introdution;
 	return (
-		<section aria-label='introduction' className='introduction'>
+		<section aria-label='Introduction' className='introduction'>
 			<div className='intro'>
 				<h2 className='name'>{name}</h2>
 				<p className='position'>{position}</p>
@@ -20,14 +20,24 @@ const Introduction = () => {
 						|
 					</span>
 					<FontAwesomeIcon className='icon' icon={faHouse} />
-					<a href={`https://${website}`} target='_blank' rel='noopener'>
+					<a
+						href={`https://${website}`}
+						target='_blank'
+						rel='noopener'
+						className='link'>
 						{website}
 					</a>
 					<span className='line' aria-hidden='true'>
 						|
 					</span>
 					<FontAwesomeIcon className='icon' icon={faLinkedin} />
-					<a href={`https://linkedin.com/${linkedIn}`}>{linkedIn}</a>
+					<a
+						href={`https://linkedin.com/${linkedIn}`}
+						target='_blank'
+						rel='noopener'
+						className='link'>
+						{linkedIn}
+					</a>
 					<span className='line' aria-hidden='true'>
 						|
 					</span>

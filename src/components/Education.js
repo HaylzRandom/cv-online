@@ -8,7 +8,7 @@ const Education = () => {
 			<div className='school'>
 				<h3>{education.name}</h3>
 				<div className='edu'>
-					<span className='edu-info'>{education.course}</span>
+					<span className='edu__info'>{education.course}</span>
 				</div>
 			</div>
 		</section>

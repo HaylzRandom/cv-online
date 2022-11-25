@@ -1,13 +1,549 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+
+  /* Colours */
+  --body-bg: #9055a7;
+  --accent: #a053aa;
+  --accent-2: #fea29f;
+  --subtitles: #707678;
+  --background: #fff;
+  --primary: #232323;
+  --section: #525A5B;
+
+  /* Typography */
+  --ff-ibm: 'IBM Plex Mono',
+    monospace;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hiding ARIA Label */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: no-wrap;
+  border: 0;
+}
+
+/* General Styling */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  color: var(--primary);
+  background-color: var(--body-bg);
+  font-family: var(--ff-ibm);
+}
+
+header {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  aspect-ratio: 1 / 1.4;
+  margin: 30px auto 50px auto;
+  background: var(--background);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 1px;
+  padding: 30px;
+  line-height: 1.5;
+}
+
+/* Intro Section */
+
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+.intro__info {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  margin-top: 5px;
+}
+
+.intro__about {
+  margin-top: 15px;
+}
+
+.intro__info > .info,
+.intro__info > .line,
+.intro__info > .link {
+  margin-top: 5px;
+}
+
+/* Skills Section */
+
+.skill {
+  color: var(--accent);
+  display: inline-block;
+  border: 2px solid var(--accent);
+  border-radius: 2px;
+  font-size: 0.8125rem;
+  margin: 5px;
+  padding: 5px;
+  margin-left: 0;
+}
+
+.skills > ul {
+  padding: 0;
+}
+
+/* Projects Section */
+
+.project {
+  margin-bottom: 15px;
+}
+
+.tech__stack {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tech {
+  border: 2px solid var(--subtitles);
+  border-radius: 2px;
+  margin: 5px;
+  margin-left: 0;
+  padding: 0 5px;
+  font-size: 0.7rem;
+}
+
+/* Experience Section */
+
+.experience {
+  margin-bottom: 10px;
+}
+
+.exp {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 10px;
+}
+
+ul .detail {
+  margin-left: 30px;
+}
+
+/* Education Section */
+
+.edu {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 10px;
+}
+
+/* Certification Section */
+
+.cert__detail {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 10px;
+}
+
+.cert__desc {
+  margin-top: 3px;
+}
+
+/* Languages Section */
+
+.lang-name {
+  margin-top: 3px;
+}
+
+/* SNS Section */
+
+.sns {
+  display: flex;
+}
+
+.sns > a {
+  opacity: 0.7;
+  transition: opacity 300ms ease-in-out;
+  margin: 0;
+}
+
+.sns > a:hover {
+  opacity: 1;
+}
+
+/* Icon */
+
+.icon {
+  max-width: 100%;
+  font-size: 1.5625rem;
+  transform: translateY(4px);
+  margin-right: 10px;
+}
+
+.sns-icon {
+  max-width: 100%;
+  height: 35px;
+  width: auto;
+  margin: 0;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.link-svg {
+  height: 20px;
+  transform: translate(5px, 3px);
+}
+
+.repeat-svg {
+  height: 20px;
+  transform: translate(-3px, 5px);
+}
+
+.download__logo {
+  font-size: 20px;
+  /* transform: translate(4px, 4px); */
+}
+
+/* Section Even-Out */
+
+/* section:not(.introduction) {
+  margin-left: 35px;
+} */
+
+section {
+  margin-right: 35px;
+}
+
+/* Buttons */
+
+.download__btn {
+  cursor: pointer;
+  color: var(--background);
+  background: var(--accent);
+  font-family: var(--ff-ibm);
+  border: 3px solid var(--background);
+  border-radius: 2px;
+  transition: all 300ms ease-in-out;
+  padding: 0.5rem;
+  padding-right: 0.6rem;
+  text-decoration: none;
+  position: relative;
+  top: 5rem;
+  right: 7px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.download__btn:hover {
+  background: var(--background);
+  color: var(--accent);
+  border: 3px solid var(--accent);
+  border-radius: 2px;
+}
+
+/* Links */
+
+.link {
+  display: inline-block;
+  position: relative;
+  color: var(--subtitles);
+  text-decoration: none;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  background-color: var(--accent);
+  transition: transform 0.2s ease-out;
+  transform-origin: bottom right;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Typography */
+
+.info,
+.intro__about,
+.tech__stack,
+.exp__info,
+.edu__info,
+.cert__detail,
+.lang-level {
+  color: var(--subtitles);
+}
+
+h2:not(.name) {
+  margin-top: 40px;
+  color: var(--section);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.name {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.date {
+  font-size: 0.8125rem;
+}
+
+.line {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    padding: 40px 80px;
+  }
+
+  .line {
+    display: unset;
+    margin: 0 5px;
+  }
+
+  .languages,
+  .intro__info,
+  .exp,
+  .edu {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .cert__detail {
+    display: inline;
+  }
+
+  .cert__desc {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .languages {
+    justify-content: space-between;
+  }
+
+  .lang-name {
+    margin-top: 0;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+
+  .skill {
+    font-size: 1rem;
+  }
+}
+
+/* Print Media Query */
+@media print {
+
+  .icon {
+    font-size: 1rem;
+  }
+
+  .link-svg {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+  }
+
+  .introduction {
+    margin-right: 25px;
+  }
+
+  /* section:not(.introduction) {
+    margin-left: 25px;
+  } */
+
+  section {
+    margin-right: 25px;
+  }
+
+  .skill {
+    margin-bottom: 0;
+    font-size: 10px;
+    border-width: 1px;
+  }
+
+  .tech {
+    border: none;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .tech__stack {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+  .line {
+    display: unset;
+  }
+
+  .info,
+  .intro__about,
+  .tech__stack,
+  .exp__info,
+  .edu__info,
+  .cert__detail,
+  .lang-level {
+    color: var(--primary);
+  }
+
+  .languages,
+  .intro__info,
+  .exp,
+  .edu {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .languages {
+    justify-content: flex-start;
+  }
+
+  .language {
+    margin-right: 30px;
+  }
+
+  main {
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    line-height: 1.2;
+    box-shadow: none;
+  }
+
+  .introduction {
+    margin-bottom: 0px;
+    padding-bottom: 0;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .project,
+  section {
+    margin-top: 0;
+  }
+
+  .name {
+    margin-left: -1px;
+    margin-bottom: 5px;
+  }
+
+  .line {
+    margin: 0 5px;
+    color: var(--primary);
+  }
+
+  .cert__detail {
+    display: inline;
+  }
+
+  .cert__desc {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #root {
+    margin: 0;
+  }
+
+  h2:not(.name) {
+    margin-top: 15px;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: var(--primary);
+  }
+
+  h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .link {
+    color: var(--primary);
+  }
+
+  .school > h3:not(:first-child) {
+    margin-top: 5px;
+  }
+
+  .languages {
+    margin-top: -10px;
+  }
+
+  .languages,
+  span,
+  .intro__info > .info,
+  .intro__info > .line,
+  .intro__info > .link {
+    font-size: 12px;
+  }
+
+  .download__btn,
+  .lang-button,
+  #sns-section {
+    display: none;
+  }
 }

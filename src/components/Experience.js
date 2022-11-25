@@ -3,19 +3,19 @@ import { experience } from '../cv-data';
 
 const Experience = () => {
 	const experienceList = experience.map((exp) => (
-		<div className='experience' key={exp.name}>
-			<h3>{exp.name}</h3>
+		<div className='experience' key={exp.company}>
+			<h3>{exp.company}</h3>
 			<div className='exp'>
-				<span className='exp-info'>{exp.position}</span>
+				<span className='exp__info'>{exp.position}</span>
 				<span className='line' aria-hidden='true'>
 					|
 				</span>
-				<span className='exp-info date'>
+				<span className='exp__info date'>
 					{exp.start} - {exp.end}
 				</span>
 			</div>
 
-			<ul className='exp-details'>
+			<ul className='exp__details'>
 				{exp.responsibilities.map((resp) => (
 					<li className='detail' key={resp}>
 						{resp}
@@ -26,7 +26,7 @@ const Experience = () => {
 	));
 
 	return (
-		<section className='work-experience'>
+		<section className='workExperience'>
 			<h2>Work Experience</h2>
 			{experienceList}
 		</section>

@@ -5,10 +5,12 @@ const Projects = () => {
 	const projectsList = projects.map((project) => (
 		<div className='project' key={project.title}>
 			<h3>
-				<a href={project.url}>{project.title}</a>
+				<a href={project.url} className='link' target='_blank' rel='noopener'>
+					{project.title}
+				</a>
 			</h3>
 
-			<div className='tech-stack'>
+			<div className='tech__stack'>
 				{project.techStack.map((tech) => (
 					<span className='tech' key={tech}>
 						{tech}

@@ -10,13 +10,12 @@ const Header = () => {
 		<header>
 			<h1 className='visually-hidden'>Hayley McCafferty's CV</h1>
 			<a
-				className='download-btn'
+				className='download__btn'
 				href={`/${cvFile}`}
 				target='_blank'
-				rel='noopener'
-			>
-				<FontAwesomeIcon icon={faDownload} />
-				Download
+				rel='noopener'>
+				<FontAwesomeIcon className='download__logo' icon={faDownload} />
+				Download CV
 			</a>
 		</header>
 	);

@@ -7,13 +7,13 @@ const Certifications = () => {
 	const certificationList = certifications.map((certification) => (
 		<div className='certificate' key={nanoid()}>
 			<h3>{certification.name}</h3>
-			<div className='cert-detail'>
-				<span className='cert-info'>{certification.school}</span>
+			<div className='cert__detail'>
+				<span className='cert__info'>{certification.school}</span>
 				<span className='line' aria-hidden='true'>
 					|
 				</span>
-				<span className='cert-info date'>{certification.date}</span>
-				<span className='cert-desc'>{certification.description}</span>
+				<span className='cert__info date'>{certification.date}</span>
+				<span className='cert__desc'>{certification.description}</span>
 			</div>
 		</div>
 	));
