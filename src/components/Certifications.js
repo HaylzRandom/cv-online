@@ -9,10 +9,10 @@ const Certifications = () => {
 			<h3>{certification.name}</h3>
 			<div className='cert__detail'>
 				<span className='cert__info'>{certification.school}</span>
-				<span className='line' aria-hidden='true'>
+				{/* <span className='line' aria-hidden='true'>
 					|
-				</span>
-				<span className='cert__info date'>{certification.date}</span>
+				</span> */}
+				{/* <span className='cert__info date'>{certification.date}</span> */}
 				<span className='cert__desc'>{certification.description}</span>
 			</div>
 		</div>

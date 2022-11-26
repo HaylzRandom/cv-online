@@ -32,7 +32,7 @@ const Introduction = () => {
 					</span>
 					<FontAwesomeIcon className='icon' icon={faLinkedin} />
 					<a
-						href={`https://linkedin.com/${linkedIn}`}
+						href={`https://linkedin.com/in/${linkedIn}`}
 						target='_blank'
 						rel='noopener'
 						className='link'>
@@ -46,10 +46,7 @@ const Introduction = () => {
 						{email}
 					</a>
 				</div>
-				<p className='intro__about'>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi qui
-					cum velit incidunt maiores iure, recusandae eius sunt rerum! Sunt?
-				</p>
+				<p className='intro__about'>{about}</p>
 			</div>
 		</section>
 	);
