@@ -11,7 +11,7 @@ const Header = () => {
 			<h1 className='visually-hidden'>Hayley McCafferty's CV</h1>
 			<a
 				className='download__btn'
-				href={`/${cvFile}`}
+				href={process.env.PUBLIC_URL + `/${cvFile}`}
 				target='_blank'
 				rel='noopener'>
 				<FontAwesomeIcon className='download__logo' icon={faDownload} />
