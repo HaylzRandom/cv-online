@@ -1,4 +1,4 @@
-# Online CV
+# CV Online
 
 ## About
 
