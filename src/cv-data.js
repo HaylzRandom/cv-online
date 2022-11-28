@@ -4,7 +4,7 @@ const header = {
 
 const introdution = {
 	name: 'Hayley McCafferty',
-	position: 'Enthusiastic Frontend Developer',
+	position: 'Front End Developer',
 	location: 'Basingstoke, England',
 	email: 'hayley.mcc@gmail.com',
 	website: 'haylzrandom.co.uk',
@@ -13,7 +13,7 @@ const introdution = {
 	/* about:
 		'Self-motivated frontend developer equipped with strong problem solving skills gained from completing various programming projects as part of Complete React Developer in 2023 Bootcamp and Front-End Engineer courses. Adept at working well in a team while maintaining focus in own self-development.', */
 	about:
-		'Organised and hard-working employee looking to be a web developer. Looking to take advantage of the web development skills I have learned such since my redunancy. I am always eager to learn something new especially new technologies',
+		'Self-motivated, dedicated, organised and hard-working employee looking for a career change to be a web developer. Equipped with strong problem solving skills gained from completing various projects as part of Complete React Developer in 2023 Bootcamp and Front-End Engineer courses. Looking to take advantage of the web development skills I have learned since my redundancy. Always eager to learn something new, especially new technologies. Currently learning Typescript, Node.js and Figma.',
 };
 
 const skills = [
@@ -48,14 +48,14 @@ const certifications = [
 	{
 		name: 'JavaScript Algorithms and Data Structures',
 		description:
-			'Fundamentals of JavaScript including variables, arrays, objects, loops and functions. Knolwdge to create algorithms to manipulate strings, factorialize numbers and learn two important programming paradigms OOP and FP.',
+			'Fundamentals of JavaScript including variables, arrays, objects, loops and functions. Knowledge to create algorithms to manipulate strings, factorialize numbers and learn two important programming paradigms OOP and FP.',
 		school: 'FreeCodeCamp',
 		/* date: 'January 2022', */
 	},
 	{
 		name: 'Front End Development Libraries',
 		description:
-			'Learn how to style site quickly with Bootstrap, add logic to CSS styles and extend them with SASS. Also learn to create SPAs with React and Redux.',
+			'Learn how to style sites quickly with Bootstrap, add logic to CSS styles and extend them with SASS. Also learn to create SPAs with React and Redux.',
 		school: 'FreeCodeCamp',
 		/* date: 'January 2022', */
 	},
@@ -111,6 +111,7 @@ const projects = [
 
 const education = {
 	name: 'University of Stirling',
+	grade: '2:1',
 	course: 'Computing Science BsC',
 };
 
@@ -121,10 +122,12 @@ const experience = [
 		start: '2016',
 		end: '2022',
 		responsibilities: [
-			'Created and maintained appropriate levels of process documentation, production data schedules and also relayed internal communcations about data processing activity to upper management.',
-			'Maintained in-depth knowledge of data, processes and transformations with an emphasis on providing support, guidance and onboarding to customers.',
-			'Maintained ownership of the configuration management process for data processing while actively contributing to the evolution of standards and processes.',
-			'Maintained data asset register and affliated maintenance routines to comply with ISO 27001 certification.',
+			'Devised appropriate levels of process documentation, production data schedules and also relayed internal communications about data processing activity to upper management, resulting in a more efficient work flow.',
+			'Developed an in-depth knowledge of data, processes and transformations with an emphasis on providing support, guidance and onboarding to customers eliminated the waiting period from 3 weeks to 1 week.',
+			'Deployed and released production data each month with an 90% on time success rate for 4 years.',
+			'Maintained ownership of the configuration management process for data processing while contributing to the evolution of standards and processes achieving 90% reduction in prepartion of processing every month.',
+			'Operated the data asset register and affiliated maintenance routines to comply with ISO 27001 audit certification every year.',
+			'Won Dr Foster Hero award within 6 months of starting at the company.',
 		],
 	},
 	{
@@ -133,8 +136,8 @@ const experience = [
 		start: '2016',
 		end: '2016',
 		responsibilities: [
-			'Improved eCommerce web application with mentorship from senior developers.',
-			'Diagnosed, resolved and performed RCA on issues relating to web applications and attached database systems.',
+			'Improved eCommerce web application with mentorship and guidance from senior developers.',
+			'Diagnosed, resolved and performed RCA on 100+ issues relating to web application and attached database systems.',
 		],
 	},
 	{
@@ -143,11 +146,11 @@ const experience = [
 		start: '2013',
 		end: '2015',
 		responsibilities: [
-			'Developed solutions for customers using SharePoint Online 2013 platform.',
-			'Maintained company wide SharePoint Hybrid platform and provided on-call support for serious issues.',
-			'Perfomed and co-ordinated RCA with team based in India. ',
-			'Main point of contact for co-ordination of work on support and projects between Nottingham and India.',
-			'Provided mentorship for junior apprentice on the team.',
+			'Created solutions for customers using SharePoint Online 2013 platform which lead to an uptake of 50% of SharePoint sites being created.',
+			'Maintained company wide SharePoint Hybrid platform with on-call support for serious issues.',
+			'Performed and coordinated RCA with a team based in India.',
+			'Main point of contact for coordination of work on support and projects between Nottingham and India.',
+			'Guided and mentored junior apprentices on the team and helped develop skills for future careers.',
 		],
 	},
 ];

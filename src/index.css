@@ -3,8 +3,10 @@
 :root {
 
   /* Colours */
-  --body-bg: #9055a7;
-  --accent: #a053aa;
+  /* --body-bg: #9055a7; */
+  --body-bg: #8958b0;
+  /* --accent: #a053aa; */
+  --accent: #8958b0;
   --accent-2: #fea29f;
   --subtitles: #707678;
   --background: #fff;
@@ -14,6 +16,7 @@
   /* Typography */
   --ff-ibm: 'IBM Plex Mono',
     monospace;
+  --ff-print: Calibri, Arial, Helvetica, sans-serif;
 }
 
 *,
@@ -58,7 +61,7 @@ header {
   justify-content: flex-end;
   margin: 0 auto;
   max-width: 1200px;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Calibri, Arial, Helvetica, sans-serif; */
 }
 
 main {
@@ -202,15 +205,7 @@ ul .detail {
   font-size: 1.5625rem;
   transform: translateY(4px);
   margin-right: 10px;
-}
-
-.sns-icon {
-  max-width: 100%;
-  height: 35px;
-  width: auto;
-  margin: 0;
-  margin-right: 10px;
-  margin-top: 15px;
+  color: var(--accent);
 }
 
 .link-svg {
@@ -302,13 +297,14 @@ section {
 .tech__stack,
 .exp__info,
 .edu__info,
+.edu__grade,
 .cert__detail,
 .lang-level {
   color: var(--subtitles);
 }
 
 h2:not(.name) {
-  margin-top: 40px;
+  margin-top: 30px;
   color: var(--section);
   text-transform: uppercase;
   font-size: 0.7rem;
@@ -386,6 +382,7 @@ h3 {
 
   .icon {
     font-size: 1rem;
+    color: var(--primary);
   }
 
   .link-svg {
@@ -397,18 +394,7 @@ h3 {
     background-color: #fff;
     color: #000;
     font-size: 12px;
-  }
-
-  .introduction {
-    margin-right: 25px;
-  }
-
-  /* section:not(.introduction) {
-    margin-left: 25px;
-  } */
-
-  section {
-    margin-right: 25px;
+    font-family: var(--ff-print);
   }
 
   .skill {
@@ -444,7 +430,6 @@ h3 {
     color: var(--primary);
   }
 
-  .languages,
   .intro__info,
   .exp,
   .edu {
@@ -452,13 +437,6 @@ h3 {
     flex-flow: row wrap;
   }
 
-  .languages {
-    justify-content: flex-start;
-  }
-
-  .language {
-    margin-right: 30px;
-  }
 
   main {
     background-color: #fff;
@@ -508,7 +486,7 @@ h3 {
   }
 
   h2:not(.name) {
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 0.5rem;
     text-transform: uppercase;
   }
@@ -527,15 +505,14 @@ h3 {
     color: var(--primary);
   }
 
-  .school > h3:not(:first-child) {
+  .school {
     margin-top: 5px;
   }
 
-  .languages {
-    margin-top: -10px;
-  }
+  /* #education {
+    margin-top: 10em;
+  } */
 
-  .languages,
   span,
   .intro__info > .info,
   .intro__info > .line,
@@ -543,9 +520,7 @@ h3 {
     font-size: 12px;
   }
 
-  .download__btn,
-  .lang-button,
-  #sns-section {
+  .download__btn {
     display: none;
   }
 }

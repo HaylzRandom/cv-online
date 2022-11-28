@@ -9,6 +9,10 @@ const Education = () => {
 				<h3>{education.name}</h3>
 				<div className='edu'>
 					<span className='edu__info'>{education.course}</span>
+					<span className='line' aria-hidden='true'>
+						|
+					</span>
+					<span className='edu__grade'>{education.grade}</span>
 				</div>
 			</div>
 		</section>

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEarthAmericas, faHouse } from '@fortawesome/free-solid-svg-icons';
 
 // Data
@@ -37,6 +37,16 @@ const Introduction = () => {
 						rel='noopener'
 						className='link'>
 						{linkedIn}
+					</a>
+					<span className='line' aria-hidden='true'>
+						|
+					</span>
+					<FontAwesomeIcon className='icon' icon={faGithubSquare} />
+					<a
+						className='link'
+						href={`https://github.com/${github}`}
+						aria-label='github'>
+						{github}
 					</a>
 					<span className='line' aria-hidden='true'>
 						|

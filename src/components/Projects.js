@@ -2,6 +2,7 @@
 import { projects } from '../cv-data';
 
 const Projects = () => {
+	if (!projects) return;
 	const projectsList = projects.map((project) => (
 		<div className='project' key={project.title}>
 			<h3>
@@ -17,8 +18,7 @@ const Projects = () => {
 					</span>
 				))}
 			</div>
-
-			<p>{project.description}</p>
+			<p className='project__description'>{project.description}</p>
 		</div>
 	));
 
