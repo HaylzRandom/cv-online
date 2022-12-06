@@ -124,8 +124,8 @@ const experience = [
 		responsibilities: [
 			'Devised appropriate levels of process documentation, production data schedules and also relayed internal communications about data processing activity to upper management, resulting in a more efficient work flow.',
 			'Developed an in-depth knowledge of data, processes and transformations with an emphasis on providing support, guidance and onboarding to customers eliminated the waiting period from 3 weeks to 1 week.',
-			'Deployed and released production data each month with an 90% on time success rate for 4 years.',
-			'Maintained ownership of the configuration management process for data processing while contributing to the evolution of standards and processes achieving 90% reduction in prepartion of processing every month.',
+			'Deployed and released production data each month with a 90% on time success rate for 4 years.',
+			'Maintained ownership of the configuration management process for data processing while contributing to the evolution of standards and processes achieving 90% reduction in preparation of processing every month.',
 			'Operated the data asset register and affiliated maintenance routines to comply with ISO 27001 audit certification every year.',
 			'Won Dr Foster Hero award within 6 months of starting at the company.',
 		],
