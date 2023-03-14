@@ -1,6 +1,6 @@
 # CV Online
 
-## About
+## Description
 
 This project was created as I wasn't satisfied with how documentation software
 was creating layouts for CVs so figured I would flex my web development skills

@@ -13,7 +13,8 @@ const introdution = {
 	/* about:
 		'Self-motivated frontend developer equipped with strong problem solving skills gained from completing various programming projects as part of Complete React Developer in 2023 Bootcamp and Front-End Engineer courses. Adept at working well in a team while maintaining focus in own self-development.', */
 	about:
-		'Self-motivated, dedicated, organised and hard-working employee looking for a career change to be a web developer. Equipped with strong problem solving skills gained from completing various projects as part of Complete React Developer in 2023 Bootcamp and Front-End Engineer courses. Looking to take advantage of the web development skills I have learned since my redundancy. Always eager to learn something new, especially new technologies. Currently learning Typescript, Node.js and Figma.',
+		/* 'Self-motivated, dedicated, organised and hard-working employee looking for a career change to be a web developer. Equipped with strong problem solving skills gained from completing various projects as part of Complete React Developer in 2023 Bootcamp and Front-End Engineer courses. Looking to take advantage of the web development skills I have learned since my redundancy. Always eager to learn something new, especially new technologies. Currently learning Typescript, Node.js and Figma.', */
+		'With extensive experience as an Operations Engineer and a strong passion for web development, I am transitioning into a Web Developer role to combine my expertise in data management and software engineering. My proficiency in database design, development, and administration, along with a solid background in programming languages such as HTML, CSS, JavaScript, and front-end frameworks like React, equips me to create visually appealing and highly functional web applications. As someone with a deep understanding of user behavior, I am dedicated to developing user-friendly web experiences that exceed expectations. My ability to identify and solve complex problems makes me an asset in this transition, and I am excited to apply my technical skills, creativity, and problem-solving abilities to deliver innovative and engaging web experiences that enhance the user experience and drive business growth.',
 };
 
 const skills = [
@@ -33,34 +34,35 @@ const skills = [
 const certifications = [
 	{
 		name: 'Front-End Engineer',
+		techStack: [
+			'HTML5',
+			'CSS3',
+			'JavaScript',
+			'Git',
+			'Github',
+			'Mocha',
+			'React',
+			'React Router',
+			'Redux',
+		],
 		description:
 			'Front-end engineers work closely with designers to make websites beautiful, functional, and fast. This Career Path will teach you the technologies you need to do just that.',
 		school: 'CodeAcademy',
 		/* date: 'January 2022', */
 	},
 	{
-		name: 'Responsive Web Design',
-		description:
-			'HTML, HTML5, CSS3, Visual Design, Accessibility, Responsive Web Design Principles, CSS Grid, CSS Flexbox',
-		school: 'FreeCodeCamp',
-		/* date: 'January 2022', */
-	},
-	{
-		name: 'JavaScript Algorithms and Data Structures',
-		description:
-			'Fundamentals of JavaScript including variables, arrays, objects, loops and functions. Knowledge to create algorithms to manipulate strings, factorialize numbers and learn two important programming paradigms OOP and FP.',
-		school: 'FreeCodeCamp',
-		/* date: 'January 2022', */
-	},
-	{
-		name: 'Front End Development Libraries',
-		description:
-			'Learn how to style sites quickly with Bootstrap, add logic to CSS styles and extend them with SASS. Also learn to create SPAs with React and Redux.',
-		school: 'FreeCodeCamp',
-		/* date: 'January 2022', */
-	},
-	{
 		name: 'Complete Web Developer in 2023: Zero to Mastery',
+		techStack: [
+			'HTML5',
+			'CSS3',
+			'JavaScript',
+			'Git',
+			'Github',
+			'React',
+			'APIs',
+			'Node.js',
+			'Express.js',
+		],
 		/* description:
 			'Bootcamp style course covering topics ranging from HTML5, CSS3, JavaScript, React, Redux, Git, Node.js, Express.js and more! All the skills needed to be a Web Developer!', */
 		description:
@@ -70,14 +72,69 @@ const certifications = [
 	},
 	{
 		name: 'Complete React Developer in 2023 (w/ Redux, Hooks, GraphQL): Zero to Mastery',
+		techStack: [
+			'React',
+			'React Router',
+			'Firebase',
+			'React Context',
+			'Netlify',
+			'Redux',
+			'APIs',
+			'GraphQL',
+			'TypeScript',
+			'Webpack',
+		],
 		description:
 			'Learn from React.js experts. This is the only React JS tutorial + projects course you need to learn React, build advanced large-scale applications from scratch and get hired as a React Developer in 2023.',
 		school: 'ZeroToMastery',
 		/* date: 'January 2022', */
 	},
+	{
+		name: 'Responsive Web Design',
+		techStack: ['HTML5', 'CSS3'],
+		description:
+			'HTML, HTML5, CSS3, Visual Design, Accessibility, Responsive Web Design Principles, CSS Grid, CSS Flexbox',
+		school: 'FreeCodeCamp',
+		/* date: 'January 2022', */
+	},
+	{
+		name: 'JavaScript Algorithms and Data Structures',
+		techStack: [
+			'JavaScript',
+			'Regular Expressions',
+			'OOP',
+			'Functional Programming',
+		],
+		description:
+			'Fundamentals of JavaScript including variables, arrays, objects, loops and functions. Knowledge to create algorithms to manipulate strings, factorialize numbers and learn two important programming paradigms OOP and FP.',
+		school: 'FreeCodeCamp',
+		/* date: 'January 2022', */
+	},
+	{
+		name: 'Front End Development Libraries',
+		techStack: ['Bootstrap', 'SASS', 'React', 'Redux'],
+		description:
+			'Learn how to style sites quickly with Bootstrap, add logic to CSS styles and extend them with SASS. Also learn to create SPAs with React and Redux.',
+		school: 'FreeCodeCamp',
+		/* date: 'January 2022', */
+	},
 ];
 
 const projects = [
+	{
+		title: 'Clothing Ecommerce Store Website',
+		url: 'https://github.com/HaylzRandom/clothing-ecommerce-store',
+		techStack: ['React', 'React Router', 'Redux', 'Firebase', 'Stripe', 'SCSS'],
+		description:
+			'A clothing e-commerce website that allows users to create an account or login with a Google account, add products to their cart and checkout using Stripe API. Client-side created using React and SASS. Server-side created using Firebase for authentication and databse storage.',
+	},
+	{
+		title: 'MERN Stack - Angeltech Helpdesk System',
+		url: 'https://github.com/HaylzRandom/angeltech-frontend',
+		techStack: ['React', 'Redux', 'Node.js', 'MongoDB', 'Express.js'],
+		description:
+			'A helpdesk application that allows users to login to an account, create tickets for technical issues, update tickets and admin users can create, delete and manage other user accounts. Client-side created using React. Server-side created using MongoDB for databse, Express.js and Node.js for API.',
+	},
 	{
 		title: 'REST Countries API with Colour Theme Picker',
 		url: 'https://github.com/HaylzRandom/rest-countries-api',
@@ -91,21 +148,8 @@ const projects = [
 			'API',
 		],
 		description:
-			'React project that pulls data from REST Countries API and display on website. Users can also search for specific countries by name or by region',
-	},
-	{
-		title: 'MERN Stack - Angeltech Helpdesk System',
-		url: 'https://github.com/HaylzRandom/angeltech-frontend',
-		techStack: ['React', 'Redux', 'Node.js', 'MongoDB', 'Express.js'],
-		description:
-			'React project that pulls data from REST Countries API and display on website. Users can also search for specific countries by name or by region',
-	},
-	{
-		title: 'Space Tourism Multipage Website',
-		url: 'https://github.com/HaylzRandom/space-tourism-multipage-website',
-		techStack: ['HTML5', 'CSS3', 'JavaScript'],
-		description:
-			'Project to build a multipage Space Tourism website utilising different navigation styles, hover states and responsive designs',
+			'Website that pulls data from REST Countries API and allows a user to filter by different terms such as continent and also allows a user to find a specific country through search. Colour theme can be changed via a click of a button. Client-side created using React, Axios, CSS3 and React Router.',
+		// 'React project that pulls data from REST Countries API and display on website. Users can also search for specific countries by name or by region',
 	},
 ];
 
