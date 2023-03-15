@@ -14,7 +14,7 @@ const introdution = {
 		'Self-motivated frontend developer equipped with strong problem solving skills gained from completing various programming projects as part of Complete React Developer in 2023 Bootcamp and Front-End Engineer courses. Adept at working well in a team while maintaining focus in own self-development.', */
 	about:
 		/* 'Self-motivated, dedicated, organised and hard-working employee looking for a career change to be a web developer. Equipped with strong problem solving skills gained from completing various projects as part of Complete React Developer in 2023 Bootcamp and Front-End Engineer courses. Looking to take advantage of the web development skills I have learned since my redundancy. Always eager to learn something new, especially new technologies. Currently learning Typescript, Node.js and Figma.', */
-		'With extensive experience as an Operations Engineer and a strong passion for web development, I am transitioning into a Web Developer role to combine my expertise in data management and software engineering. My proficiency in database design, development, and administration, along with a solid background in programming languages such as HTML, CSS, JavaScript, and front-end frameworks like React, equips me to create visually appealing and highly functional web applications. As someone with a deep understanding of user behavior, I am dedicated to developing user-friendly web experiences that exceed expectations. My ability to identify and solve complex problems makes me an asset in this transition, and I am excited to apply my technical skills, creativity, and problem-solving abilities to deliver innovative and engaging web experiences that enhance the user experience and drive business growth.',
+		'With extensive experience as a Data Operations Engineer and a strong passion for web development, I am transitioning into a Web Developer role to combine my expertise in data management and software engineering. My proficiency in database design, development, and administration, along with a solid background in programming languages such as HTML, CSS, JavaScript, and front-end frameworks like React, equips me to create visually appealing and highly functional web applications. As someone with a deep understanding of user behavior, I am dedicated to developing user-friendly web experiences that exceed expectations. My ability to identify and solve complex problems makes me an asset in this transition, and I am excited to apply my technical skills, creativity, and problem-solving abilities to deliver innovative and engaging web experiences that enhance the user experience and drive business growth.',
 };
 
 const skills = [
@@ -162,7 +162,7 @@ const education = {
 const experience = [
 	{
 		company: 'Dr Foster (Telstra Health UK)',
-		position: 'Operations Engineer',
+		position: 'Data Operations Engineer',
 		start: '2016',
 		end: '2022',
 		responsibilities: [
