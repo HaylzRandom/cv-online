@@ -164,7 +164,7 @@ const experience = [
 		company: 'Dr Foster (Telstra Health UK)',
 		position: 'Data Operations Engineer',
 		start: '2016',
-		end: '2022',
+		end: '2021',
 		responsibilities: [
 			'Devised appropriate levels of process documentation, production data schedules and also relayed internal communications about data processing activity to upper management, resulting in a more efficient work flow.',
 			'Developed an in-depth knowledge of data, processes and transformations with an emphasis on providing support, guidance and onboarding to customers eliminated the waiting period from 3 weeks to 1 week.',
