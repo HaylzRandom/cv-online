@@ -434,6 +434,10 @@ h3 {
 		flex-flow: row wrap;
 	}
 
+	.edu:last-child {
+		padding-top: 15px;
+	}
+
 	main {
 		background-color: #fff;
 		width: 100%;

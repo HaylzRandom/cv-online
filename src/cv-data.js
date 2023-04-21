@@ -23,6 +23,9 @@ const skills = [
 	'JavaScript',
 	'React',
 	'Redux',
+	'PHP',
+	'Laravel',
+	'Tailwind CSS',
 	'Git',
 	'Github',
 	'T-SQL',
@@ -121,6 +124,13 @@ const certifications = [
 ];
 
 const projects = [
+	{
+		title: 'DevJobs Listings Website',
+		url: 'https://github.com/HaylzRandom/devjobs-laravel',
+		techStack: ['PHP', 'Laravel', 'Tailwind CSS', 'SQLite', 'AlpineJS'],
+		description:
+			'A job listings website that allows users to create an account and have full CRUD capability for job listings. All information is pulled from a database and responsively design utilising Tailwind CSS. Technologies used are PHP, Laravel, Tailwind CSS, SQLite and AlpineJS.',
+	},
 	{
 		title: 'Clothing Ecommerce Store Website',
 		url: 'https://github.com/HaylzRandom/clothing-ecommerce-store',
